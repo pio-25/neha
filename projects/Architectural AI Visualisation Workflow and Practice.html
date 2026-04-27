@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 01</title>
+    <link rel="stylesheet" href="../style-new.css" />
+  </head>
+
+  <body class="project-page">
+    <!-- CURSOR -->
+    <div id="cur"><div id="curLabel">OPEN</div></div>
+    <div id="curR"></div>
+
+    <!-- RAIL -->
+    <div class="rail">
+      <div class="rail-logo">NN</div>
+      <nav class="rail-nav">
+        <a class="rlink" href="../index-new.html#hero">Home</a>
+        <a class="rlink" href="../index-new.html#about">About</a>
+        <a class="rlink" href="../index-new.html#projects">Work</a>
+        <a class="rlink" href="../index-new.html#current-thinking">Thinking</a>
+        <a class="rlink" href="../index-new.html#contact">Contact</a>
+      </nav>
+    </div>
+
+    <!-- HEADER -->
+    <div class="cs-head ai-head" data-n="03">
+      <button
+        class="cs-back reveal"
+        onclick="location.href = '../index-new.html'"
+      >
+        ← Portfolio
+      </button>
+
+      <div class="cs-tags">
+        <span class="cstag b">AI Visualisation</span>
+        <span class="cstag b">Prompt Engineering</span>
+        <span class="cstag">Ongoing</span>
+      </div>
+
+      <h1 class="cs-h1">
+        Architectural AI Visualisation<br />
+        <em>Workflow and Practice</em>
+      </h1>
+
+      <p class="cs-sub">
+        An active body of work exploring how AI image and video tools render
+        unbuilt architecture with precision and atmosphere. Prompt patterns,
+        ControlNet workflows, tool comparison across Midjourney, Higgsfield,
+        Stable Diffusion, Runway ML.
+      </p>
+
+      <!-- META -->
+      <div class="cs-meta">
+        <div>
+          <div class="cs-ml">TYPE</div>
+          <div class="cs-mv">Personal portfolio project</div>
+        </div>
+        <div>
+          <div class="cs-ml">TOOLS</div>
+          <div class="cs-mv">
+            Midjourney · Higgsfield · Stable Diffusion · ControlNet · Runway ML
+          </div>
+        </div>
+        <div>
+          <div class="cs-ml">FOCUS</div>
+          <div class="cs-mv">
+            Residential · Conceptual · Urban · Material studies
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="cs-body">
+      <!-- WORKFLOW -->
+
+      <div class="cs-sec">
+        <div class="cs-sl">THE WORKFLOW</div>
+        <h2 class="cs-st reveal">Five stages from <em>idea to image </em></h2>
+
+        <div class="steps">
+          <div class="step">
+            <div class="stepn">01</div>
+            <div>
+              <div class="stept">
+                Spatial brief — define intent before opening a tool
+              </div>
+              <div class="stepb">
+                Typology, atmosphere, materiality, time of day, user experience.
+                This is architectural thinking, not image thinking. The prompt
+                comes last.
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="stepn">02</div>
+            <div>
+              <div class="stept">
+                Structural prompt engineering — layers, not descriptions
+              </div>
+              <div class="stepb">
+                Subject → environment → material → lighting → camera → style
+                reference → negative prompts. Each layer adds control. Removing
+                one adds randomness. Both are valid choices.
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="stepn">03</div>
+            <div>
+              <div class="stept">
+                ControlNet — for geometry-critical outputs
+              </div>
+              <div class="stepb">
+                A base sketch, floor plan, or 3D model fed into ControlNet
+                (depth map, canny edge, or line-art mode) to constrain the AI's
+                composition to the actual design intent.
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="stepn">04</div>
+            <div>
+              <div class="stept">Iteration — vary, refine, direct</div>
+              <div class="stepb">
+                Seeds are fixed, parameters adjusted, inpainting used to correct
+                specific areas without losing what works. Iteration is where
+                craft enters the process.
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="stepn">05</div>
+            <div>
+              <div class="stept">
+                Video extension — Runway ML and Higgsfield
+              </div>
+              <div class="stepb">
+                Selected stills extended into short video walkthroughs. Motion,
+                parallax, atmosphere. An image becomes a moment. A moment
+                becomes an experience.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <!-- PROMPT PATTERN -->
+      <div class="divider-accent"></div>
+      <div class="cs-sec">
+        <div class="cs-sl">PROMPT PATTERN</div>
+        <h2 class="cs-st reveal">
+          The anatomy of <em>a strong architectural prompt</em>
+        </h2>
+
+        <div class="c2 learn">
+          <div class="ccard">
+            <div class="cct">Typology anchor</div>
+            <div class="ccb">
+              "Raw board-marked concrete, aged teak cladding" produces far more
+              controlled results than "modern materials". Specificity is
+              control.
+            </div>
+          </div>
+
+          <div class="ccard r">
+            <div class="cct">Material language</div>
+            <div class="ccb">
+              Start with the building type and its key spatial quality. This
+              grounds the AI in architectural convention before adding
+              atmosphere.
+            </div>
+          </div>
+
+          <div class="ccard">
+            <div class="cct">Light as a character</div>
+            <div class="ccb">
+              "Late afternoon golden hour, long shadows, diffused light through
+              rice paper screens" does more design work than any style
+              reference.
+            </div>
+          </div>
+
+          <div class="ccard">
+            <div class="cct">Negative prompts as quality control</div>
+            <div class="ccb">
+              Consistently excluding "distorted perspective, floating elements,
+              cartoon, oversaturated" maintains spatial realism.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-accent"></div>
+      <div class="cs-sec">
+        <div class="pq">
+          <p>
+            "The best AI architectural image is not the one the tool chose. It
+            is the one you directed it toward. Prompting is design thinking in a
+            new medium."
+          </p>
+          <span>Neha Nalavde · AI Visualisation Work</span>
+        </div>
+      </div>
+      <div class="cs-sl">Continue</div>
+      <!-- NEXT -->
+      <div class="nxt">
+        <div
+          class="ncell reveal"
+          onclick="
+            location.href = 'BIM and Digital Transformation Four Studies.html'
+          "
+        >
+          <div class="ncel-l">Next</div>
+          <div class="ncel-t">BIM and Digital Transformation →</div>
+        </div>
+
+        <!-- RELATED -->
+        <div
+          class="ncell reveal"
+          onclick="
+            location.href =
+              'Advancing Construction Through Additive Manufacturing.html'
+          "
+        >
+          <div class="ncel-l">Related</div>
+          <div class="ncel-t">MSc Dissertation, AM and AI →</div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <footer>
+      <div class="fn">Neha Nalavde</div>
+      <div class="fc">Portfolio</div>
+      <div class="flinks">
+        <a href="mailto:nehanalavde99@gmail.com">Email</a
+        ><a
+          href="https://www.linkedin.com/in/neha-nalavde"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          href="https://pio-25.github.io/neha-portfolio/PORTFOLIO - Neha Nalavde.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CV</a
+        >
+      </div>
+    </footer>
+
+    <script src="../script-new.js"></script>
+  </body>
+</html>
